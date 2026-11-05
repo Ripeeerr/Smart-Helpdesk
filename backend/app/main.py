@@ -1,9 +1,10 @@
 import logging
 
-from app.database import engine
 from fastapi import FastAPI, HTTPException, status
 from sqlalchemy import text
 from sqlalchemy.exc import SQLAlchemyError
+
+from app.database import engine
 
 app = FastAPI()
 
