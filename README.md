@@ -169,7 +169,7 @@ docker compose ps
 cd backend
 uv sync
 uv run alembic upgrade head
-uv run python scripts/seed.py
+uv run python -m scripts.seed
 cd ..
 ```
 
