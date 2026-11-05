@@ -1,0 +1,11 @@
+.env
+.env.*
+!.env.example
+node_modules/
+dist/
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
