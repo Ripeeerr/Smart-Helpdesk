@@ -1,4 +1,4 @@
-from app.db.models import Priority
+from app.db.models.reference import Priority
 from app.db.session import engine
 from sqlalchemy import func, select
 from sqlalchemy.orm import Session
