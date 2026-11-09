@@ -1,7 +1,8 @@
-from app.database import engine
-from app.models import Priority
 from sqlalchemy import func, select
 from sqlalchemy.orm import Session
+
+from app.database import engine
+from app.models import Priority
 
 if __name__ == "__main__":
     with Session(engine) as session:
