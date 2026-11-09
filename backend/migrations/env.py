@@ -1,10 +1,10 @@
 from logging.config import fileConfig
 
+import app.db.models  # noqa: F401
 from alembic import context
-
-import app.models  # noqa: F401
-from app.config import settings
-from app.database import Base, engine
+from app.core.config import settings
+from app.db.base import Base
+from app.db.session import engine
 
 config = context.config
 if config.config_file_name is not None:

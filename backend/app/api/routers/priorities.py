@@ -4,8 +4,8 @@ from fastapi import APIRouter, Depends, status
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from app.database import get_db
-from app.models import Priority
+from app.db.models.reference import Priority
+from app.db.session import get_db
 from app.schemas.priority import PriorityOut
 
 router = APIRouter(prefix="/priorities", tags=["priorities"])

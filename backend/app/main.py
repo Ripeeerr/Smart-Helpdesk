@@ -4,8 +4,8 @@ from fastapi import FastAPI, HTTPException, status
 from sqlalchemy import text
 from sqlalchemy.exc import SQLAlchemyError
 
-from app.database import engine
-from app.routers.priority_router import router as priority_router
+from app.api.routers.priorities import router as priority_router
+from app.db.session import engine
 
 app = FastAPI()
 
